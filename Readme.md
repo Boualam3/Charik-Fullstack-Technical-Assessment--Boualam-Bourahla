@@ -26,15 +26,18 @@ example output :`docker-compose version 1.29.2 .....`
 First, clone the repository to your local machine:
 
 ```bash
-git clone  git@github.com:Boualam3/
+git clone  https://github.com/Boualam3/Charik-Fullstack-Technical-Assessment--Boualam-Bourahla.git
 
 #go into it
-cd HomeEaseAPI/
+cd Charik-Fullstack-Technical-Assessment--Boualam-Bourahla/
+
 ```
 
-Second, you have to Add HubSpot Token of private app to .env file in backend folder :
+Second, you have to create .env file where we store sensitive data inside backend folder , HubSpot Token is required for our app , here is quick quid to create private app and get your token [Here](https://blog.icx.co/en/hubspot/hubspot/step-by-step-guide-how-to-create-and-use-private-apps-in-hubspot) :
 
 ```bash
+# backend/.env
+
 HUBSPOT_TOKEN = <add-your-app-token-here>
 ALLOWED_HOST = 0.0.0.0
 CORS_ALLOWED_ORIGINS = http://0.0.0.0 http://localhost
@@ -51,10 +54,10 @@ docker-compose -f docker-compose-dev.yml build
 
 #### Run the image following :
 
-note : to run the image in background you have to specify dettached mode by add -d
+note : to run the image in background you have to specify detached mode by adding -d argument
 
 ```bash
-#live logging mode
+#live logging mode hit hit Ctrl+C  to exit
 docker-compose -f docker-compose-dev.yml up
 
 #in the background
