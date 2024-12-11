@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.drower-scrollBar1{
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
+
+.drower-scrollBar1:hover{
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.drower-scrollBar1::-webkit-scrollbar {
+  width: 4px;
+  /* background-color: blue; */
+}
+
+
+.drower-scrollBar1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #e1e7f0;
+  /* box-shadow: inset 0 0 1px 1px #5c6670; */
+}
+
+.drower-scrollBar1::-webkit-scrollbar-track {
+  border-radius: 10px;
+  /* background: #eee; */
+  /* box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3); */
+}
+
+.drower-scrollBar1::-webkit-scrollbar-thumb:hover {
+  /* background: linear-gradient(left, #8391a6, #536175); */
+}
